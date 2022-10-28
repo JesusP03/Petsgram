@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        background: rgb(20,0,36);
+        background: -moz-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#140024",endColorstr="#abdbdd",GradientType=1);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .title{
+        font-family: 'Cookie', cursive;
+        text-align: center;
+        font-size: 60px;
+        color: #1d3454;
+    }
+
+    .img-container{
+        display: none;
+    }
+
+    .form{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1d3454;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 15px;
+        -webkit-box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        -moz-box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        margin: 0 10vw;
+        height: 420px;
+    }
+
+
+    .subtitle{
+        margin: 30px 0px;
+    }
+
+    .correo p{
+        font-size: smaller;
+    }
+
+    .contra p{
+        font-size: smaller;
+    }
+
+    .form input{
+        border-radius: 8px;
+        border: none;
+        outline: 1px solid #457b9d;
+        height: 40px;
+        width: 50vw;
+    }
+
+
+    .contra p{
+        font-size: smaller;
+    }
+
+    .buttons{
+        display: flex;
+        margin: 40px 0px;
+        justify-content: space-evenly;
+        column-gap: 15px;
+    }
+
+    .buttons button{
+        border: none;
+        height: 44px;
+        font-size: medium;
+        padding: 10px;
+    }
+
+    .login-btn{
+        background-color: #457b9d;
+        color: white;
+        border-radius: 12px;
+    }
+
+    .register-btn{
+        background-color: white;
+        color: #457b9d;
+        border-radius: 12px;
+    }
+
+    .recover-password{
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: #457b9d;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0px;
+        padding: 0 10px;
+    }
+
+    .link-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 10px;
+        row-gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .footer-link{
+        text-decoration: none;
+        color: grey;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        background: rgb(20,0,36);
+        background: -moz-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#140024",endColorstr="#abdbdd",GradientType=1);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .title{
+        font-family: 'Cookie', cursive;
+        text-align: center;
+        font-size: 60px;
+        color: #1d3454;
+    }
+
+    .img-container{
+        display: none;
+    }
+
+    .form{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1d3454;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 15px;
+        -webkit-box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        -moz-box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        margin: 0 10vw;
+    }
+
+
+    .subtitle{
+        margin: 30px 0px;
+    }
+
+    .correo p{
+        font-size: smaller;
+    }
+
+    .contra p{
+        font-size: smaller;
+    }
+
+    .form input{
+        border-radius: 8px;
+        border: none;
+        outline: 1px solid #457b9d;
+        height: 40px;
+        width: 50vw;
+    }
+
+
+    .contra p{
+        font-size: smaller;
+    }
+
+    .buttons{
+        display: flex;
+        margin: 40px 0px;
+        justify-content: space-evenly;
+        column-gap: 25px;
+    }
+
+    .buttons button{
+        border: none;
+        height: 44px;
+        font-size: medium;
+        padding: 10px;
+        width: 10vw;
+    }
+
+    .login-btn{
+        background-color: #457b9d;
+        color: white;
+        border-radius: 12px;
+    }
+
+    .register-btn{
+        background-color: white;
+        color: #457b9d;
+        border-radius: 12px;
+    }
+
+    .recover-password{
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: #457b9d;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0px;
+        padding: 0 10px;
+    }
+
+    .link-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 10px;
+        row-gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .footer-link{
+        text-decoration: none;
+        color: grey;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        background: rgb(20,0,36);
+        background: -moz-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#140024",endColorstr="#abdbdd",GradientType=1);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .title{
+        font-family: 'Cookie', cursive;
+        text-align: center;
+        font-size: 60px;
+        color: #1d3454;
+    }
+
+    .img-container{
+        display: none;
+    }
+
+    .form{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1d3454;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 15px;
+        -webkit-box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        -moz-box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        margin: 0 10vw;
+    }
+
+
+    .subtitle{
+        margin: 30px 0px;
+    }
+
+    .correo p{
+        font-size: smaller;
+    }
+
+    .contra p{
+        font-size: smaller;
+    }
+
+    .form input{
+        border-radius: 8px;
+        border: none;
+        outline: 1px solid #457b9d;
+        height: 40px;
+        width: 50vw;
+    }
+
+
+    .contra p{
+        font-size: smaller;
+    }
+
+    .buttons{
+        display: flex;
+        margin: 40px 0px;
+        justify-content: space-evenly;
+        column-gap: 25px;
+    }
+
+    .buttons button{
+        border: none;
+        height: 44px;
+        font-size: medium;
+        padding: 10px;
+        width: 10vw;
+    }
+
+    .login-btn{
+        background-color: #457b9d;
+        color: white;
+        border-radius: 12px;
+    }
+
+    .register-btn{
+        background-color: white;
+        color: #457b9d;
+        border-radius: 12px;
+    }
+
+    .recover-password{
+        margin-bottom: 20px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0px;
+        padding: 0 10px;
+    }
+
+    .link-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 10px;
+        row-gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .footer-link{
+        text-decoration: none;
+        color: grey;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        background: rgb(20,0,36);
+        background: -moz-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#140024",endColorstr="#abdbdd",GradientType=1);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .title{
+        font-family: 'Cookie', cursive;
+        text-align: center;
+        font-size: 60px;
+        color: #1d3454;
+    }
+
+    .main{
+        display: flex;
+        justify-content: center;
+        column-gap: 60px;
+    }
+
+    .img-container{
+        border-radius: 15px;
+        display: block;
+        width: 30vw;
+        height: 70vh;
+        -webkit-box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        -moz-box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        overflow: hidden;
+    }
+
+    .dog-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: transform 0.5s;
+    }
+
+    .dog-img:hover{
+        transform: scale(1.1);
+    }
+
+    .form{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1d3454;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 15px;
+        -webkit-box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        -moz-box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
+        margin: 0;
+        width: 30vw;
+        height: 70vh;
+    }
+
+
+    .subtitle{
+        margin: 30px 0px;
+    }
+
+    .correo p{
+        font-size: smaller;
+    }
+
+    .contra p{
+        font-size: smaller;
+    }
+
+    .form input{
+        border-radius: 8px;
+        border: none;
+        outline: 1px solid #457b9d;
+        height: 50px;
+        width: 22vw;
+    }
+
+
+    .contra p{
+        font-size: smaller;
+    }
+
+    .buttons{
+        display: flex;
+        margin: 40px 0px;
+        justify-content: space-evenly;
+        column-gap: 25px;
+    }
+
+    .buttons button{
+        border: none;
+        height: 44px;
+        font-size: medium;
+        padding: 10px;
+        width: 8vw;
+    }
+
+    .login-btn{
+        background-color: #457b9d;
+        color: white;
+        border-radius: 12px;
+    }
+
+    .login-btn:hover{
+        background-color: #325970;
+    }
+
+    .register-btn{
+        background-color: white;
+        color: #457b9d;
+        border-radius: 12px;
+    }
+
+    .register-btn:hover{
+        outline: 1px solid #457b9d;
+    }
+
+    .recover-password{
+        color: #325970;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+
+    .recover-password:hover{
+        text-decoration: underline;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 60px 0 30px 0;
+        padding: 0 10px;
+    }
+
+    .link-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 15px;
+        row-gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .footer-link{
+        text-decoration: none;
+        color: grey;
+    }
+
+    .footer-link:hover{
+        text-decoration: underline;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+        
+}
