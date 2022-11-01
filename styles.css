@@ -4,12 +4,21 @@
 @media only screen and (max-width: 600px) {
     body{
         background: rgb(20,0,36);
-        background: -moz-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
-        background: -webkit-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
-        background: linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: -moz-linear-gradient(rgba(5,7,12,0.18), rgba(5,7,12,0.18)), -moz-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: -webkit-linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)) ,-webkit-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: linear-gradient(rgba(5,7,12,0.18), rgba(5,7,12,0.18)), linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#140024",endColorstr="#abdbdd",GradientType=1);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .register__pet-user-logo{
+        fill: white;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
     }
 
     .title{
@@ -23,7 +32,7 @@
         display: none;
     }
 
-    .form{
+    .form, .pet-register-form{
         font-family: Arial, Helvetica, sans-serif;
         color: #1d3454;
         display: flex;
@@ -37,6 +46,35 @@
         margin: 0 10vw;
         height: 420px;
     }
+
+    .register__pet-name-date-container, .register__pet-type-race-container, .pet-register-form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .pet-register-subtitle-container{
+        display: flex;
+        align-items: center;
+    }
+
+    .pet-register-form{
+        height: 600px;
+        margin-bottom: 20vh;
+        position: relative;
+    }
+
+    .register__new-pet-arrow-container{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #1d3454;
+    }
+
+    .register__new-pet-arrow-container:visited{
+        color: #1d3454;
+    }
+
 
     .register-form{
         font-family: Arial, Helvetica, sans-serif;
@@ -58,6 +96,45 @@
         margin: 30px 0px;
     }
 
+    .register__new-pet{
+        font-size: 4vw;
+    }
+
+    .photo-username-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    .photo__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5px;
+        outline: 1px solid #1d3454;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+        width: fit-content;
+    }
+
+    .photo__input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    .camera__logo{
+        width: 25px;
+        fill: #1d3454;
+    }
+
     .correo p{
         font-size: smaller;
     }
@@ -66,12 +143,17 @@
         font-size: smaller;
     }
 
-    .form input{
+    .form input, .pet-register-form input{
         border-radius: 8px;
         border: none;
         outline: 1px solid #457b9d;
         height: 40px;
         width: 50vw;
+    }
+
+    .register__pet-date{
+        color: #1d3454;
+        padding: 10px;
     }
 
     .register-form input{
@@ -102,7 +184,7 @@
         column-gap: 15px;
     }
 
-    .buttons button{
+    .buttons button, .register__pet-submmit-button{
         border: none;
         height: 44px;
         font-size: medium;
@@ -116,10 +198,14 @@
         padding: 10px;
     }
 
-    .login-btn{
+    .login-btn, .register__pet-submmit-button{
         background-color: #457b9d;
         color: white;
         border-radius: 12px;
+    }
+
+    .register__pet-submmit-button{
+        margin-top: 15px;
     }
 
     .register-login-btn{
@@ -180,9 +266,9 @@
 @media only screen and (min-width: 600px) {
     body{
         background: rgb(20,0,36);
-        background: -moz-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
-        background: -webkit-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
-        background: linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: -moz-linear-gradient(rgba(5,7,12,0.18), rgba(5,7,12,0.18)), -moz-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: -webkit-linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)) ,-webkit-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: linear-gradient(rgba(5,7,12,0.18), rgba(5,7,12,0.18)), linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#140024",endColorstr="#abdbdd",GradientType=1);
         background-size: cover;
         background-repeat: no-repeat;
@@ -195,11 +281,20 @@
         color: #1d3454;
     }
 
+    .register__pet-user-logo{
+        fill: white;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
     .img-container{
         display: none;
     }
 
-    .form{
+    .form, .pet-register-form{
         font-family: Arial, Helvetica, sans-serif;
         color: #1d3454;
         display: flex;
@@ -211,6 +306,17 @@
         -moz-box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
         box-shadow: -1px 11px 52px -20px rgba(0,0,0,0.64);
         margin: 0 10vw;
+    }
+
+    .register__pet-name-date-container, .register__pet-type-race-container, .pet-register-form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .pet-register-form{
+        height: 630px;
+        margin-bottom: 100px;
     }
 
     .register-form{
@@ -227,10 +333,47 @@
         margin: 0 10vw;
         height: 700px;
     }
-
-
     .subtitle{
         margin: 30px 0px;
+    }
+
+    .register__new-pet{
+        font-size: 5vw;
+    }
+
+    .photo-username-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    .photo__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5px;
+        outline: 1px solid #1d3454;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+        width: fit-content;
+    }
+
+    .photo__input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    .camera__logo{
+        width: 25px;
+        fill: #1d3454;
     }
 
     .correo p{
@@ -241,12 +384,37 @@
         font-size: smaller;
     }
 
-    .form input{
+    .form input, .pet-register-form input{
         border-radius: 8px;
         border: none;
         outline: 1px solid #457b9d;
         height: 40px;
         width: 50vw;
+    }
+
+    .register__pet-date{
+        color: #1d3454;
+    }
+
+    .pet-register-form{
+        height: 600px;
+        margin-bottom: 20vh;
+        position: relative;
+    }
+
+    .register__new-pet-arrow-container{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #1d3454;
+    }
+
+    .register__new-pet-arrow-container:visited{
+        color: #1d3454;
+    }
+
+    .register__pet-date{
+        padding: 10px;
     }
 
     .register-form input{
@@ -277,12 +445,16 @@
         column-gap: 9vw;
     }
 
-    .buttons button{
+    .buttons button, .register__pet-submmit-button{
         border: none;
         height: 44px;
         font-size: medium;
         padding: 10px;
         width: 10vw;
+    }
+
+    .register__pet-submmit-button{
+        width: 15vw;
     }
 
     .register-buttons-container button{
@@ -293,10 +465,18 @@
         width: 15vw;
     }
 
-    .login-btn{
+    .login-btn, .register__pet-submmit-button{
         background-color: #457b9d;
         color: white;
         border-radius: 12px;
+    }
+
+    .register__pet-submmit-button{
+        margin-top: 15px;
+    }
+
+    .register__pet-submmit-button-container{
+        margin-bottom: 0px;
     }
 
     .register-login-btn{
@@ -357,9 +537,9 @@
 @media only screen and (min-width: 768px) {
     body{
         background: rgb(20,0,36);
-        background: -moz-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
-        background: -webkit-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
-        background: linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: -moz-linear-gradient(rgba(5,7,12,0.18), rgba(5,7,12,0.18)), -moz-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: -webkit-linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)) ,-webkit-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: linear-gradient(rgba(5,7,12,0.18), rgba(5,7,12,0.18)), linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#140024",endColorstr="#abdbdd",GradientType=1);
         background-size: cover;
         background-repeat: no-repeat;
@@ -391,9 +571,26 @@
     }
 
 
+    .pet-register-form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 45px;
+        height: 95vh;
+        margin-bottom: 100px;
+    }
+
+
     .subtitle{
         margin: 30px 0px;
     }
+
+    .photo-username-container, .register__pet-name-date-container, .register__pet-type-race-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 30px;
+    }
+
 
     .correo p{
         font-size: smaller;
@@ -403,7 +600,7 @@
         font-size: smaller;
     }
 
-    .form input{
+    .form input, .register__pet-username-container input{
         border-radius: 8px;
         border: none;
         outline: 1px solid #457b9d;
@@ -411,6 +608,19 @@
         width: 50vw;
     }
 
+    .register__pet-username-container input, .register__pet-name-date-container input, .register__pet-type-race-container input{
+        width: 30vw;
+        height: 65px;
+    }
+
+    .register__pet-username-container{
+        position: relative;
+        bottom: 10px;
+    }
+
+    .register__pet-date{
+        padding: 15px;
+    }
 
     .contra p{
         font-size: smaller;
@@ -441,6 +651,12 @@
         background-color: white;
         color: #457b9d;
         border-radius: 12px;
+    }
+
+    .register__pet-submmit-button{
+        height: 44px;
+        width: 20vw;
+        margin-bottom: 20px;
     }
 
     .recover-password{
@@ -474,9 +690,9 @@
 @media only screen and (min-width: 992px) {
     body{
         background: rgb(20,0,36);
-        background: -moz-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
-        background: -webkit-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
-        background: linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: -moz-linear-gradient(rgba(5,7,12,0.18), rgba(5,7,12,0.18)), -moz-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: -webkit-linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)) ,-webkit-linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
+        background: linear-gradient(rgba(5,7,12,0.18), rgba(5,7,12,0.18)), linear-gradient(0deg, rgba(20,0,36,0) 50%, rgba(171,219,221,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#140024",endColorstr="#abdbdd",GradientType=1);
         background-size: cover;
         background-repeat: no-repeat;
@@ -487,6 +703,10 @@
         text-align: center;
         font-size: 60px;
         color: #1d3454;
+    }
+
+    .subtitle{
+        margin: 30px 0px;
     }
 
     .main{
@@ -539,7 +759,7 @@
         width: 30vw;
         height: 70vh;
     }
-    
+
     .register-form{
         font-family: Arial, Helvetica, sans-serif;
         color: #1d3454;
@@ -554,6 +774,11 @@
         margin: 0;
         width: 40vw;
         height: 82vh;
+    }
+
+    .pet-register-form{
+        display: flex;
+        align-items: center;
     }
 
     .subtitle{
@@ -673,6 +898,29 @@
     .footer-link:hover{
         text-decoration: underline;
     }
+
+    .register__new-pet{
+        margin-top: 30px;
+    }
+
+    .pet-register-subtitle-container{
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .register__new-pet{
+        font-size: 3vw;
+    }
+
+    .photo__container:hover,
+    .photo__input:hover,
+    .camera__logo:hover,
+    .upload__photo:hover
+    {
+        cursor: pointer;
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
